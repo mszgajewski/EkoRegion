@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "758783167269",
+    "firebase_url": "https://ekoregion-4z46n-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ekoregion-4z46n",
+    "storage_bucket": "ekoregion-4z46n.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758783167269:android:3ed3ac4f6a4286d8fc68cc",
+        "android_client_info": {
+          "package_name": "com.mszgajewski.ekoregion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758783167269-dtj5tbn7iao2r4gn2hdjg2kcjsnto4t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSvoo9FPEFqIZurv5knMWzY8YDtDcyqxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758783167269-dtj5tbn7iao2r4gn2hdjg2kcjsnto4t4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
