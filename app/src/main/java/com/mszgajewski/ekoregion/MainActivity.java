@@ -26,4 +26,24 @@ public class MainActivity extends AppCompatActivity {
         return true;
 
     }
+    
+     public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        switch (item.getItemId()) {
+            case R.id.lokalizacja:
+                LOCATION_SERVICE(info.id);
+                return true;
+            case R.id.Ustawienia:
+                SEARCH_SERVICE(info.id);
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
+
+    private void SEARCH_SERVICE(long id) {
+    }
+
+    private void LOCATION_SERVICE(long id) {
+    }
 }
