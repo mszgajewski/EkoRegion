@@ -1,49 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <item android:id="@+id/Ustawienia"
+        android:title="Ustawienia" />
     <item
         android:id="@+id/lokalizacja"
         android:title="Lokalizacja" >
     <menu>
-        <item android:id="@+id/a"
-            android:title="Majków Duży" />
         <item android:id="@+id/b"
-            android:title="Grabica" />
-        <item android:id="@+id/c"
-            android:title="Grabica" />
-        <item android:id="@+id/d"
-            android:title="Grabica" />
-        <item android:id="@+id/e"
-            android:title="Grabica" />
-        <item android:id="@+id/f"
-            android:title="Grabica" />
-        <item android:id="@+id/g"
-            android:title="Grabica" />
-        <item android:id="@+id/h"
-            android:title="Grabica" />
-        <item android:id="@+id/i"
-            android:title="Grabica" />
-        <item android:id="@+id/j"
-            android:title="Grabica" />
-        <item android:id="@+id/k"
-            android:title="Grabica" />
-        <item android:id="@+id/l"
-            android:title="Grabica" />
+            android:title="Bujny" />
+
         <item android:id="@+id/m"
-            android:title="Grabica" />
-        <item android:id="@+id/n"
-            android:title="Grabica" />
-        <item android:id="@+id/o"
-            android:title="Grabica" />
-        <item android:id="@+id/p"
-            android:title="Grabica" />
-        <item android:id="@+id/r"
-            android:title="Grabica" />
+            android:title="Majków Duży" />
+
     </menu>
-
     </item>
-
-    <item android:id="@+id/Ustawienia"
-        android:title="Ustawienia" />
 
 </menu>
