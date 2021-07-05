@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <item android:id="@+id/Ustawienia"
-        android:title="Ustawienia" />
     <item
-        android:id="@+id/lokalizacja"
-        android:title="Lokalizacja" >
-    <menu>
-        <item android:id="@+id/b"
-            android:title="Bujny" />
-
-        <item android:id="@+id/m"
-            android:title="Majków Duży" />
-
-    </menu>
-    </item>
+        android:id="@+id/Ustawienia"
+        android:title="Ustawienia" />
+    <item android:id="@+id/lokalizacja"
+        android:title="lokalizacja" />
 
 </menu>

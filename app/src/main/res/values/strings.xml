@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">EkoRegion</string>
+    <string name="lokalizacja">Lokalizacja</string>
+    <string name="ustawienia">Ustawienia</string>
+
+    <string-array name="Lokalicacja">
+        <item>Majków Duży</item>
+        <item>Bujny</item>
+        <item>Mzurki</item>
+        <item>Bogdanów</item>
+
+    </string-array>
 </resources>
