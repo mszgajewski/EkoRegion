@@ -33,15 +33,29 @@ public class MainActivity extends AppCompatActivity {
 
         autoCompleteTextView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
 
-                String item = parent.getItemAtPosition(position).toString();
-                Toast.makeText(MainActivity.this, "item: " + item, Toast.LENGTH_SHORT).show();
+                autoCompleteTextView.setSelection(0);
+
+                switch (position) {
+                    case 1:
+                        Toast.makeText( MainActivity.this, "Wybrałeś: Majków Duży", Toast.LENGTH_SHORT ).show();
+                        break;
+                    case 2:
+                        Toast.makeText( getApplicationContext(), "Wybrałeś: Bujny", Toast.LENGTH_SHORT ).show();
+                        break;
+                    case 3:
+                        Toast.makeText( getApplicationContext(), "Wybrałeś: Mzurki", Toast.LENGTH_SHORT ).show();
+                        break;
+
+                    default:
+                        break;
+                }
 
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
+            public void onNothingSelected(AdapterView<?> adapterView) {
                 Toast.makeText(MainActivity.this, "nothing ", Toast.LENGTH_SHORT).show();
             }
         });
