@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity {
 
    private AutoCompleteTextView  autoCompleteTextView;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String[] lokalizacja = getResources().getStringArray(R.array.Lokalicacja);
+
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, R.layout.dropdown_item, lokalizacja);
         autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
         autoCompleteTextView.setAdapter(arrayAdapter);
@@ -30,17 +33,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                if (parent.getItemAtPosition(position).equals("Lokalizacja")) {
-                } else {
-
-                    String item = parent.getItemAtPosition(position).toString();
-
-                    Toast.makeText(parent.getContext(), "Wybrano: " + item, Toast.LENGTH_SHORT).show();
-                }
+                String item = parent.getItemAtPosition(position).toString();
+                Toast.makeText(MainActivity.this, "item " + item, Toast.LENGTH_SHORT).show();
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
+                Toast.makeText(MainActivity.this, "nothing ", Toast.LENGTH_SHORT).show();
             }
         });
 
