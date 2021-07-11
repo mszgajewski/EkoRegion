@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
    private AutoCompleteTextView  autoCompleteTextView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 String item = parent.getItemAtPosition(position).toString();
-                Toast.makeText(MainActivity.this, "item " + item, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "item: " + item, Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
@@ -42,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "nothing ", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
+
         return true;
     }
 
