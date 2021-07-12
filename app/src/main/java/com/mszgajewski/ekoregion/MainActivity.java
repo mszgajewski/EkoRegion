@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText( getApplicationContext(), "Wybrałeś: Bujny", Toast.LENGTH_SHORT ).show();
                         break;
                     case 3:
-                        Toast.makeText( getApplicationContext(), "Wybrałeś: Mzurki", Toast.LENGTH_SHORT ).show();
+                        Toast.makeText( adapterView.getContext(), "Wybrałeś: Mzurki", Toast.LENGTH_SHORT ).show();
                         break;
 
                     default:
